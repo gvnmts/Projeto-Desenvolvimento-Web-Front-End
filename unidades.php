@@ -53,31 +53,34 @@
       <div class="flex w-full mb-20 flex-wrap">
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-            <img alt="Fachada da unidade Liberdade" class="absolute inset-0 w-full h-full object-cover object-center" src="">
+            <img alt="Fachada da unidade Liberdade" class="absolute inset-0 w-full h-full object-cover object-top" src="./img/fachada1.webp">
             <div class="px-8 py-7 relative z-10 w-full border-4 border-white-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-              <h1 class="title-font text-lg font-medium text-black mb-3">Liberdade</h1>
-              <p class="leading-relaxed text-black">Avenida da Liberdade, 902 - Liberdade, São Paulo - SP</p>
+              <h1 class="title-font text-xl font-medium text-black mb-3">Liberdade</h1>
+              <p class="leading-relaxed text-lg text-black ">Avenida da Liberdade, 902 - Liberdade, São Paulo - SP</p>
+              <br><br><br><br>
             </div>
           </div>
         </div>
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-            <img alt="Fachada da unidade Santa Cecília" class="absolute inset-0 w-full h-full object-cover object-center" src="">
+            <img alt="Fachada da unidade Santa Cecília" class="absolute inset-0 w-full h-full object-cover object-top" src="./img/fachada2.webp">
             <div class="px-8 py-7 relative z-10 w-full border-4 border-white-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-              <h1 class="title-font text-lg font-medium text-black mb-3">Santa Cecília</h1>
-              <p class="leading-relaxed text-black">Alameda Barros, 59 - Santa Cecília, São Paulo - SP</p>
+              <h1 class="title-font text-xl font-medium text-black mb-3">Santa Cecília</h1>
+              <p class="leading-relaxed text-lg text-black ">Alameda Barros, 59 - Santa Cecília, São Paulo - SP</p>
+              <br><br><br><br>
             </div>
           </div>
         </div>
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-            <img alt="Fachada da unidade Avenida Paulista" class="absolute inset-0 w-full h-full object-cover object-center" src="">
+            <img alt="Fachada da unidade Avenida Paulista" class="absolute inset-0 w-full h-full object-cover object-top" src="./img/fachada3.webp">
             <div class="px-8 py-7 relative z-10 w-full border-4 border-white-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
-              <h1 class="title-font text-lg font-medium text-black mb-3">Avenida Paulista</h1>
-              <p class="leading-relaxed text-black">Avenida Paulista, 664 - Bela Vista, São Paulo - SP</p>
+              <h1 class="title-font text-xl font-medium text-black mb-3">Avenida Paulista</h1>
+              <p class="leading-relaxed text-lg text-black ">Avenida Paulista, 664 - Bela Vista, São Paulo - SP</p>
+              <br><br><br><br>
             </div>
           </div>
         </div>

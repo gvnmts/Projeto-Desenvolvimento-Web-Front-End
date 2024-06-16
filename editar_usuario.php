@@ -15,14 +15,11 @@ $campo = mysqli_fetch_array($listar);
 	<main>
 	<h2>Editando usuário</h2>
 	<form method="post" action="atualiza_usuario.php">
-		<p><label>ID de Usuário:</label>
-			<input type="text" name="usuario_id" value="<?php echo($usuario_id); ?>"><br>
-		</p>
-		<!--<p><label>Nome:</label>
-            <input type="text" name="nome" maxlength="80" size="50" required value="<?php/* echo($campo['nome']); */?>">
-        </p>-->
         <p><label>Email:</label>
 			<input type="text" name="email" required value="<?php echo($campo['email']); ?>">
+        </p>
+		<p><label>Senha:</label>
+			<input type="password" name="senha" required value="<?php echo($campo['senha']); ?>">
         </p>
 		<p><input type="submit" value="Atualizar">
             <input type="reset" value="Redefinir">

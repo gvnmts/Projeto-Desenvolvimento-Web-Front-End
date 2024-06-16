@@ -7,9 +7,9 @@ try{
     echo "<table border='1'>
     <tr>
         <td>ID de Usuário</td>
-        <!--<td>Nome</td>-->
-        <td>Email</td>
         <td>Data de Registro</td>
+        <td>Email</td>
+        <td>Senha</td>
         <td colspan='2'>Ações</td>
     </tr>";
     
@@ -21,9 +21,9 @@ try{
 ?>
             <tr>
                 <td><?php echo($linha['usuario_id']); ?></td>
-                <!--<td><?php/* echo($linha['nome']); */?></td>-->
-                <td><?php echo($linha['email']); ?></td>
                 <td><?php echo($linha['data']); ?></td>
+                <td><?php echo($linha['email']); ?></td>
+                <td><?php echo($linha['senha']); ?></td>
                 <td><a href="editar_usuario.php?usuario_id=<?php echo($linha['usuario_id']); ?>">Alterar</a></td>
                 <td><a href="excluir_usuario.php?usuario_id=<?php echo($linha['usuario_id']); ?>">Excluir</a></td>"
             </tr>
