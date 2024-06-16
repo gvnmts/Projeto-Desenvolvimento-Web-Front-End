@@ -1,3 +1,13 @@
+<?php
+session_start();
+$_SESSION;
+
+include_once("conexao.php");
+include_once("funcoes.php");
+
+$user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,13 +20,36 @@
   <header class="text-white body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <a class="ml-3 text-xl" href="index.html">SLIMFIT</a>
+        <a class="ml-3 text-xl" href="index.php">SLIMFIT</a>
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-white" href="index.html">PÁGINA INICIAL</a>
-        <a class="mr-5 hover:text-white" href="unidades.html">UNIDADES</a>
-        <a class="mr-5 hover:text-white" href="sobrenos.html">SOBRE NÓS</a>
-        <a class="mr-5 hover:text-white" href="login.html">LOGIN</a>
+        <a class="mr-5 hover:text-white" href="index.php">PÁGINA INICIAL</a>
+        <a class="mr-5 hover:text-white" href="unidades.php">UNIDADES</a>
+        <a class="mr-5 hover:text-white" href="sobrenos.php">SOBRE NÓS</a>
+          <style>
+            .dropdown{
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content{
+              display: none;
+              position: absolute;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              padding: 12px 16px;
+            }
+            
+            .dropdown:hover .dropdown-content{
+              display: block;
+            }
+          </style>
+          <div class="dropdown">
+            <a class="mr-5 hover:text-white">ÁREA DO USUÁRIO</a>
+            <div class="dropdown-content">
+              <p><a href="lista_usuarios.php">Configurações</a></p>
+              <p><a href="logout.php">Logout</a></p>
+            </div>
+          </div>
       </nav>
     </div>
   </header>
@@ -83,7 +116,7 @@
       <div class="flex flex-wrap -m-4">
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-            <img alt="Foto frontal do filósofo Henry David Thoreau" class="absolute inset-0 w-full h-full object-cover object-center" src="./img/equipamentos1.avif">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./img/equipamentos1.avif">
             <div class="px-8 py-7 relative z-10 w-full border-4 border-white-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
               <h1 class="title-font text-lg font-medium text-black mb-3">Henry David Thoreau,</h1>
@@ -94,7 +127,7 @@
         </div>
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-            <img alt="Foto frontal do ator e fisiculturista Arnold Schwarzenegger" class="absolute inset-0 w-full h-full object-cover object-center" src="./img/equipamentos2.webp">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./img/equipamentos2.webp">
             <div class="px-8 py-10 z-10 w-full border-4 border-white-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
               <h1 class="title-font text-lg font-medium text-black mb-3">Arnold Schwarzenegger,</h1>
@@ -104,7 +137,7 @@
         </div>
         <div class="lg:w-1/3 sm:w-1/2 p-4">
           <div class="flex relative">
-            <img alt="Foto frontal do ex-presidente dos Estados Unidos Abraham Lincoln" class="absolute inset-0 w-full h-full object-cover object-center" src="./img/equipamentos3.avif">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="./img/equipamentos3.avif">
             <div class="px-8 py-7 relative z-10 w-full border-4 border-white-200 bg-white opacity-0 hover:opacity-100">
               <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"></h2>
               <h1 class="title-font text-lg font-medium text-black mb-3">Abraham Lincoln,</h1>

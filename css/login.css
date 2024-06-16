@@ -2,19 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
   }
   
-  body {
-    background-color:rgb(99, 102, 241);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .container {
+  .containerLogin {
     background-color: whitesmoke;
     padding: 6px;
     width: 350px;

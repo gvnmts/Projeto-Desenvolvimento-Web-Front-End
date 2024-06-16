@@ -10,20 +10,43 @@
   <header class="text-white body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <a class="ml-3 text-xl" href="index.html">SLIMFIT</a>
+        <a class="ml-3 text-xl" href="index.php">SLIMFIT</a>
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-white" href="index.html">PÁGINA INICIAL</a>
-        <a class="mr-5 hover:text-white" href="unidades.html">UNIDADES</a>
-        <a class="mr-5 hover:text-white" href="sobrenos.html">SOBRE NÓS</a>
-        <a class="mr-5 hover:text-white" href="login.html">LOGIN</a>
+        <a class="mr-5 hover:text-white" href="index.php">PÁGINA INICIAL</a>
+        <a class="mr-5 hover:text-white" href="unidades.php">UNIDADES</a>
+        <a class="mr-5 hover:text-white" href="sobrenos.php">SOBRE NÓS</a>
+          <style>
+            .dropdown{
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content{
+              display: none;
+              position: absolute;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              padding: 12px 16px;
+            }
+            
+            .dropdown:hover .dropdown-content{
+              display: block;
+            }
+          </style>
+          <div class="dropdown">
+            <a class="mr-5 hover:text-white">ÁREA DO USUÁRIO</a>
+            <div class="dropdown-content">
+              <p><a href="lista_usuarios.php">Configurações</a></p>
+              <p><a href="logout.php">Logout</a></p>
+            </div>
+          </div>
       </nav>
     </div>
   </header>
 
-  <br><br>
+<br><br>
 
-  <section class="text-white body-font">
+<section class="text-white body-font">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <h1 class="text-3xl text-2xl font-medium title-font text-white lg:w-1/3 lg:mb-0 mb-4">Sobre nós</h1>
       <br><br><br><br>
@@ -32,7 +55,7 @@
       </div>
     </div>
   </section>
-
+  
   <hr>
 
   <section class="text-white body-font">
